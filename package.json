@@ -1,0 +1,27 @@
+{
+  "name": "temporal-dst-demo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "\"9:00 tomorrow in London\" across the 25 October 2026 clock change, computed with Temporal and with Date.",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=26"
+  },
+  "scripts": {
+    "temporal": "node src/temporal-days-vs-hours.ts",
+    "date-ms": "node src/date-add-ms.ts",
+    "date-setdate": "node src/date-setdate.ts",
+    "api": "node src/api-in-and-out.ts",
+    "polyfill": "node polyfill/fullcalendar.ts",
+    "typecheck": "tsc -p tsconfig.json",
+    "check": "node check.ts"
+  },
+  "devDependencies": {
+    "@js-temporal/polyfill": "0.5.1",
+    "@types/node": "26.6.5",
+    "temporal-polyfill": "1.0.6",
+    "ts6": "npm:typescript@6.0.3",
+    "typescript": "7.0.2"
+  }
+}

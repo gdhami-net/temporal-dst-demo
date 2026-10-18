@@ -1,0 +1,7 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "lib": ["es2024", "esnext.temporal"]
+  },
+  "include": ["../src"]
+}
